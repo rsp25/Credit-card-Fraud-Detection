@@ -194,9 +194,9 @@ def predict():
                                      Education_type_higher,Education_type_incomplete_higher,Education_type_lower_secondary,Education_type_secondary]])
         output = prediction
         if output> 0:
-            return render_template('index.html',prediction_texts="Its a fraud")
+            return render_template('index.html',prediction_texts="Fraud may not happen")
         else:
-            return render_template('index.html',prediction_text="Its not a fraud")
+            return render_template('index.html',prediction_text="Fraud may happen")
     else:
         return render_template('index.html')
         
