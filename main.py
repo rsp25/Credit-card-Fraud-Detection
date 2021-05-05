@@ -194,22 +194,11 @@ def predict():
                                      Education_type_higher,Education_type_incomplete_higher,Education_type_lower_secondary,Education_type_secondary]])
         output = prediction
         if output> 0:
-            return render_template('index.html',prediction_text="Fraud may happen")
-        else:
             return render_template('index.html',prediction_text="Fraud may not happen")
+        else:
+            return render_template('index.html',prediction_text="Fraud may  happen")
     else:
         return render_template('index.html')
         
 if __name__ == '__main__':
     app.run()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
